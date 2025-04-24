@@ -20,7 +20,7 @@ const Navbar = ({ cartItems = [], search, setSearch }) => {
   
 const uName  = localStorage.getItem('userName') 
 
-  const slice = uName.slice(0,1)
+  const slice = uName.slice(0,1).toUpperCase();
 
 useEffect(()=> {
   if(uName){
